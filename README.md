@@ -1,28 +1,31 @@
 # AEP Cosmic Superfluid Theory - Code Repository
 
-This repository contains the code and data for the paper:  
+This repository contains the code and data for the paper:
+
 **"The Anti-Entropic Principle and the Two-Field Cosmic Superfluid: A Unified Theory from Primordial Coupling to Late-Time Dissipation"**
 
-## Reproducing the Results
+by Scott Devine
 
-The central predictions of the paper can be reproduced in two steps:
+## Overview
 
-1.  **Solve for AEP Parameters:**
-    ```bash
-    python src/aep_solver.py
-    ```
-    This solves the coherence scale system and outputs the zero-parameter values for `g, λ, γ, κ, v_χ, λ_χ` to `data/best_fit_parameters.txt`.
+This code provides the implementation for the Two-Field Cosmic Superfluid theory derived from the Anti-Entropic Principle (AEP). The theory predicts key cosmological parameters, including the Hubble constant (`H₀`) and the structure growth parameter (`S₈`), with zero free parameters.
 
-2.  **Run Cosmological Integration:**
-    ```bash
-    python scripts/run_h0_calculation.py   # Generates H0 = 73.63
-    python scripts/run_s8_calculation.py   # Generates S8 = 0.758
-    ```
+## Key Results
 
-## Requirements
-*   Python 3.8+
-*   NumPy, SciPy
-*   Modified CLASS (included in `src/modified_class/`)
+The code in this repository reproduces the central findings of the paper:
+- **Hubble Constant:** `H₀ = 73.63 ± 0.15 km/s/Mpc`
+- **Structure Growth:** `S₈ = 0.758 ± 0.008`
 
-## License
-[Choose an open-source license, e.g., MIT]
+## Repository Structure
+
+- `src/` - Source code for numerical solvers and modified CLASS modules
+- `scripts/` - Scripts to run calculations and generate plots
+- `data/` - Output data and best-fit parameter files
+
+## Usage
+
+*(Instructions will be updated as the code is finalized.)*
+
+## Contact
+
+Scott Devine: scottdevine01@gmail.com
